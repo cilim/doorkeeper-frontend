@@ -1,0 +1,7 @@
+h1 UNDERLINE.io
+
+.login-box
+  = simple_form_for @attempt, url: logins_path(**@attempt.params) do |f|
+    = f.input :email
+    = f.input :password
+    = f.submit
